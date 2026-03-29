@@ -420,7 +420,7 @@ body::after {
         <div class="s2-col">
           <div class="s2-col-head">#100FullStackProjectsChallenge</div>
           <div class="s2-card featured" id="pc-1"><div class="cn">Crypto Dashboard</div><div class="ct">Node · express</div></div>
-          <div class="s2-card featured" id="pc-1"><div class="cn">Full-Stack Shared Diary (Mutual Diary)</div><div class="ct">EJS · PostgreSQL</div></div>
+          <div class="s2-card featured" id="pc-2"><div class="cn">Full-Stack Shared Diary (Mutual Diary)</div><div class="ct">EJS · PostgreSQL</div></div>
         </div>
         <div class="s2-col">
           <div class="s2-col-head">Web Dev</div>
@@ -503,55 +503,67 @@ body::after {
   </section>
 
   <!-- PROJECTS SECTION -->
-  <section class="section" id="sec-projects">
+    <section class="section" id="sec-projects">
     <div class="sec-eye">002 — Projects</div>
     <h2 class="sec-head reveal">SELECTED<br>WORK</h2>
     <div class="sec-line reveal"></div>
 
     <div class="proj-tabs reveal">
-      <button class="proj-tab active" onclick="switchTab('web',this)">#100FullStackProjectsChallenge</button>
-      <button class="proj-tab" onclick="switchTab('mobile',this)">WEB APPS</button>
-      <button class="proj-tab" onclick="switchTab('tools',this)">AI / Tools</button>
+        <button class="proj-tab active" onclick="switchTab('web',this)">#100FullStackProjectsChallenge</button>
+        <button class="proj-tab" onclick="switchTab('mobile',this)">WEB APPS</button>
+        <button class="proj-tab" onclick="switchTab('tools',this)">AI / Tools</button>
+    </div>
+    <!-- PROJECTS SECTION -->
+    <div class="proj-panel active" id="panel-web">
+        <div class="proj-scroll">
+        <!-- #100FULLSTACKPROJECT STACK - ADDING ANYTING NEW HERE -->
+        <a href="https://crypto-dashboard-api-js.onrender.com/#" style="text-decoration: none; color: inherit;">
+            <div class="proj-card-main">
+            <div class="pc-badge feat">Web App · Featured</div>
+            <div class="pc-title">Crypto Dashboard</div>
+            <div class="pc-desc">A full-stack Crypto & Web3 dashboard built with Node.js, Express, and EJS.</div>
+            <div class="pc-tech"><span class="pc-pill">Render</span><span class="pc-pill">Node.js</span><span class="pc-pill">Express.js</span><span class="pc-pill">Axios</span><span class="pc-pill">EJS</span><span class="pc-pill">CoinGecko API v3</span></div>
+            </div>
+        </a>
+
+        <a href="https://multiple-diary.onrender.com" style="text-decoration: none; color: inherit;">
+            <div class="proj-card-main">
+            <div class="pc-badge feat">Web App</div>
+            <div class="pc-title">Full-Stack Shared Diary</div>
+            <div class="pc-desc">A private, aesthetic, and shared web-based diary application.</div>
+            <div class="pc-tech"><span class="pc-pill">Render</span><span class="pc-pill">Node.js</span><span class="pc-pill">Express.js</span><span class="pc-pill">PostgreSQL</span><span class="pc-pill">EJS</span><span class="pc-pill">CRUD</span></div>
+            </div>
+        </a>
+
+        </div>
     </div>
 
-    <!-- Web Apps -->
-     <a href="https://crypto-dashboard-api-js.onrender.com/#"style="text-decoration: none; color: inherit; display: block;">
-    <div class="proj-panel active" id="panel-web">
-      <div class="proj-scroll">
-        <div class="proj-card-main">
-          <div class="pc-badge feat">Web App · Featured</div>
-          <div class="pc-title">Crypto Dashbord</div>
-          <div class="pc-desc">A full-stack Crypto & Web3 dashboard built with Node.js, Express, and EJS. Features real-time market data, trending ecosystem tracking, and an optimized auto-fetch caching system using the CoinGecko API.</div>
-          <div class="pc-tech"><span class="pc-pill">Render</span><span class="pc-pill">Node.js</span><span class="pc-pill">Express.js</span><span class="pc-pill">Axios</span><span class="pc-pill">EJS</span><span class="pc-pill">CoinGecko API v3</span></div>
-        </div>
-      </div>
-    </div>
-    </a>
-    <a href="https://multiple-diary.onrender.com"style="text-decoration: none; color: inherit; display: block;">
-    <div class="proj-panel active" id="panel-web">
-      <div class="proj-scroll">
-        <div class="proj-card-main">
-          <div class="pc-badge feat">Web App</div>
-          <div class="pc-title">Full-Stack Shared Diary (Mutual Diary)</div>
-          <div class="pc-desc">A private, aesthetic, and shared web-based diary application. Mutual Diary allows users to create secure "Rooms" using a unique seed and password.</div>
-          <div class="pc-tech"><span class="pc-pill">Render</span><span class="pc-pill">Node.js</span><span class="pc-pill">Express.js</span><span class="pc-pill">PostgreSQL</span><span class="pc-pill">EJS</span><span class="pc-pill">CRUD</span></div>
-        </div>
-      </div>
-    </div>
-    </a>
-    <!-- Mobile -->
-    <a href="https://rahelxv.github.io/guess-number-game-js/"style="text-decoration: none; color: inherit; display: block;">
     <div class="proj-panel" id="panel-mobile">
-      <div class="proj-scroll">
-        <div class="proj-card-main">
-          <div class="pc-badge feat">Web App · Featured</div>
-          <div class="pc-title">Guessing Number Game</div>
-          <div class="pc-desc">A customizable number guessing game built with Vanilla JS. Features dynamic range setting, life systems, and Giphy API integration for win/loss celebrations.</div>
-          <div class="pc-tech"><span class="pc-pill">JavaScript (ES6+)</span><span class="pc-pill">Giphy API</span><span class="pc-pill">HTML5</span><span class="pc-pill">CSS3</span></div>
+        <div class="proj-scroll">
+        <a href="https://rahelxv.github.io/guess-number-game-js/" style="text-decoration: none; color: inherit;">
+            <div class="proj-card-main">
+            <div class="pc-badge feat">Web App</div>
+            <div class="pc-title">Guessing Number Game</div>
+            <div class="pc-desc">Customizable number guessing game built with Vanilla JS.</div>
+            <div class="pc-tech"><span class="pc-pill">JavaScript (ES6+)</span><span class="pc-pill">Giphy API</span><span class="pc-pill">HTML5</span><span class="pc-pill">CSS3</span></div>
+            </div>
+        </a>
         </div>
-      </div>
     </div>
-    </a>
+
+    <div class="proj-panel" id="panel-tools">
+        <div class="proj-scroll">
+        <a href="https://rahelxv.github.io/" style="text-decoration: none; color: inherit;">
+            <div class="proj-card-main">
+            <div class="pc-badge feat">AI Tool</div>
+            <div class="pc-title">All Machine Learning Implementation</div>
+            <div class="pc-desc">Experimental project containing various ML implementations.</div>
+            <div class="pc-tech"><span class="pc-pill">Python</span><span class="pc-pill">Mechine Learning</span><span class="pc-pill">Pandas</span><span class="pc-pill">Data Science</span></div>
+            </div>
+        </a>
+        </div>
+    </div>
+    </section>
     <!-- AI / Tools -->
     <a href="https://rahelxv.github.io/"style="text-decoration: none; color: inherit; display: block;">
     <div class="proj-panel" id="panel-tools">
